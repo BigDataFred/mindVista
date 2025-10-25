@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MindVista — Psychologische Beratung & Coaching</title>
+  <meta name="description" content="Psychologische Beratung & Coaching für Klarheit, Balance und persönliche Entwicklung." />
+  <style>
+    body { font-family: Inter, sans-serif; margin: 0; color: #111318; background: #fff; }
+    header { border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+    .logo-container { display: flex; align-items: center; gap: 1.5rem; }
+    .logo-container img { height: 120px; width: auto; }
+    h1, h2, h3 { color: #2e6b4e; }
+    strong { color: #333; }
+    .lang-switcher { display: flex; gap: 8px; }
+    .lang-switcher button { background: none; border: none; cursor: pointer; font-size: 1rem; color: #2e6b4e; font-weight: 600; }
+    main { max-width: 1000px; margin: auto; padding: 2rem; }
+    section { margin-bottom: 2rem; }
+    footer { border-top: 1px solid #eee; text-align: center; padding: 1rem; font-size: 0.85rem; color: #555; }
+    .btn { display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background: #2e6b4e; color: #fff; text-decoration: none; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="mindVistalogo.png" alt="MindVista Logo">
+      <h1 id="site-title">Selbstentwicklung durch Klarheit, Balance und bewusste Veränderung</h1>
+    </div>
+    <div class="lang-switcher">
+      <button data-lang="de">Deutsch</button>
+      <button data-lang="en">English</button>
+      <button data-lang="fr">Français</button>
+      <button data-lang="es">Español</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2 id="hero-title">MindVista</h2>
+      <p id="hero-subtitle">Psychologische Beratung & Coaching für Menschen, die wachsen, verstehen und sich neu ausrichten wollen.</p>
+    </section>
+
+    <section id="ueber">
+      <h3 id="ueber-title">Unser Team</h3>
+      <p id="ueber-text">MindVista ist Dr. Frédéric Roux, Dipl.-Psych., ein erfahrener Psychologe und Neurowissenschaftler. Nach vielen Jahren in Forschung und Industrie begleitet er heute Menschen, die ihren Weg reflektieren, Belastung reduzieren und ihr Potenzial entfalten möchten.</p>
+    </section>
+
+    <section id="angebot">
+      <h3 id="angebot-title">Angebot</h3>
+      <ul id="angebot-list">
+        <li><strong>Karriere- & Übergangscoaching</strong> – Orientierung, Entscheidungsfindung und Positionierung für Fachkräfte und Wissenschaftler:innen.</li>
+        <li><strong>Psychologische Beratung für Expats</strong> – Anpassungsprozesse, Identität und Stressbewältigung in internationalen Kontexten.</li>
+        <li><strong>Resilienz & Burnout-Prävention</strong> – Strategien für Energie, Fokus und Lebensfreude.</li>
+        <li><strong>Keynotes & Workshops</strong> – Vorträge zu Neurowissenschaft, Lernen, KI und Stress.</li>
+        <li><strong>Retreats & Erlebnisse</strong> – Surf, Natur, Bewegung und mentale Regeneration an der baskischen Küste.</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h3 id="kontakt-title">Kontakt</h3>
+      <p id="kontakt-text">Schreiben Sie uns, um ein Erstgespräch zu vereinbaren oder buchen Sie direkt eine 1:1 Sitzung:</p>
+      <p><a class="btn" id="book-btn" href="mailto:ihre.email@beispiel.de">Jetzt 1:1 Sitzung vereinbaren</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text">© 2025 Dr. Frédéric Roux, Dipl.-Psych. · MindVista</p>
+  </footer>
+
+  <script>
+    const translations = {
+      de: {
+        siteTitle: "Selbstentwicklung durch Klarheit, Balance und bewusste Veränderung",
+        heroTitle: "MindVista",
+        heroSubtitle: "Psychologische Beratung & Coaching für Menschen, die wachsen, verstehen und sich neu ausrichten wollen.",
+        bookBtn: "Jetzt 1:1 Sitzung vereinbaren",
+        angebotTitle: "Angebot",
+        angebotList: [
+          "Karriere- & Übergangscoaching – Orientierung, Entscheidungsfindung und Positionierung für Fachkräfte und Wissenschaftler:innen.",
+          "Psychologische Beratung für Expats – Anpassungsprozesse, Identität und Stressbewältigung in internationalen Kontexten.",
+          "Resilienz & Burnout-Prävention – Strategien für Energie, Fokus und Lebensfreude.",
+          "Keynotes & Workshops – Vorträge zu Neurowissenschaft, Lernen, KI und Stress.",
+          "Retreats & Erlebnisse – Surf, Natur, Bewegung und mentale Regeneration an der baskischen Küste."
+        ],
+        ueberTitle: "Unser Team",
+        ueberText: "MindVista ist Dr. Frédéric Roux, Dipl.-Psych., ein erfahrener Psychologe und Neurowissenschaftler. Nach vielen Jahren in Forschung und Industrie begleitet er heute Menschen, die ihren Weg reflektieren, Belastung reduzieren und ihr Potenzial entfalten möchten.",
+        kontaktTitle: "Kontakt",
+        kontaktText: "Schreiben Sie uns, um ein Erstgespräch zu vereinbaren oder buchen Sie direkt eine 1:1 Sitzung:",
+        footerText: "© 2025 Dr. Frédéric Roux, Dipl.-Psych. · MindVista"
+      },
+      en: {
+        siteTitle: "Self-development through clarity, balance, and conscious change",
+        heroTitle: "MindVista",
+        heroSubtitle: "Psychological counseling & coaching for people who want to grow, understand, and realign themselves.",
+        bookBtn: "Request a 1:1 session now",
+        angebotTitle: "Services",
+        angebotList: [
+          "Career & Transition Coaching – Orientation, decision-making, and positioning for professionals and researchers.",
+          "Psychological Counseling for Expats – Adaptation, identity, and stress management in international contexts.",
+          "Resilience & Burnout Prevention – Strategies for restoring energy, focus, and joy.",
+          "Keynotes & Workshops – Talks on neuroscience, learning, AI, and stress.",
+          "Retreats & Experiences – Surf, nature, movement, and mental regeneration on the Basque coast."
+        ],
+        ueberTitle: "Our Team",
+        ueberText: "MindVista is Dr. Frédéric Roux, Dipl.-Psych., an experienced psychologist and neuroscientist. After many years in research and industry, he now supports people who want to reflect on their path, reduce stress, and unfold their potential.",
+        kontaktTitle: "Contact",
+        kontaktText: "Write to us to arrange an introductory meeting or book a 1:1 session directly:",
+        footerText: "© 2025 Dr. Frédéric Roux, Dipl.-Psych. · MindVista"
+      },
+      fr: {
+        siteTitle: "Développement personnel par la clarté, l'équilibre et le changement conscient",
+        heroTitle: "MindVista",
+        heroSubtitle: "Conseil psychologique et coaching pour celles et ceux qui souhaitent grandir, comprendre et se réaligner.",
+        bookBtn: "Demander une séance 1:1",
+        angebotTitle: "Prestations",
+        angebotList: [
+          "Coaching de carrière et de transition – Orientation, prise de décision et positionnement pour chercheurs et professionnels.",
+          "Conseil psychologique pour expatriés – Adaptation, identité et gestion du stress dans des contextes internationaux.",
+          "Résilience et prévention du burn-out – Stratégies pour retrouver énergie, concentration et joie de vivre.",
+          "Conférences & Ateliers – Neurosciences, apprentissage, IA et stress.",
+          "Retraites & Expériences – Surf, nature et régénération mentale sur la côte basque."
+        ],
+        ueberTitle: "Notre équipe",
+        ueberText: "MindVista est le Dr Frédéric Roux, Dipl.-Psych., un psychologue et neuroscientifique expérimenté. Après des années dans la recherche et l'industrie, il accompagne aujourd'hui des personnes souhaitant réfléchir à leur parcours, réduire le stress et développer leur potentiel.",
+        kontaktTitle: "Contact",
+        kontaktText: "Écrivez-nous pour organiser une première rencontre ou réservez directement une séance 1:1 :",
+        footerText: "© 2025 Dr. Frédéric Roux, Dipl.-Psych. · MindVista"
+      },
+      es: {
+        siteTitle: "Desarrollo personal a través de la claridad, el equilibrio y el cambio consciente",
+        heroTitle: "MindVista",
+        heroSubtitle: "Asesoramiento psicológico y coaching para quienes desean crecer, comprender y reorientarse.",
+        bookBtn: "Solicitar sesión 1:1",
+        angebotTitle: "Servicios",
+        angebotList: [
+          "Coaching de carrera y transición – Orientación, toma de decisiones y posicionamiento para profesionales e investigadores.",
+          "Asesoramiento psicológico para expatriados – Adaptación, identidad y gestión del estrés en contextos internacionales.",
+          "Resiliencia y prevención del agotamiento – Estrategias para recuperar energía, concentración y alegría.",
+          "Conferencias y talleres – Neurociencia, aprendizaje, IA y estrés.",
+          "Retiros y experiencias – Surf, naturaleza y regeneración mental en la costa vasca."
+        ],
+        ueberTitle: "Nuestro equipo",
+        ueberText: "MindVista es el Dr. Frédéric Roux, Dipl.-Psych., un psicólogo y neurocientífico experimentado. Tras años en la investigación y la industria, acompaña a personas que desean reflexionar sobre su camino, reducir el estrés y desarrollar su potencial.",
+        kontaktTitle: "Contacto",
+        kontaktText: "Escríbanos para concertar una primera cita o reserve directamente una sesión 1:1:",
+        footerText: "© 2025 Dr. Frédéric Roux, Dipl.-Psych. · MindVista"
+      }
+    };
+
+    document.querySelectorAll('.lang-switcher button').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const lang = e.target.dataset.lang;
+        const t = translations[lang];
+        document.getElementById('site-title').textContent = t.siteTitle;
+        document.getElementById('hero-title').textContent = t.heroTitle;
+        document.getElementById('hero-subtitle').textContent = t.heroSubtitle;
+        document.getElementById('book-btn').textContent = t.bookBtn;
+        document.getElementById('angebot-title').textContent = t.angebotTitle;
+        document.getElementById('angebot-list').innerHTML = t.angebotList.map(item => `<li>${item}</li>`).join('');
+        document.getElementById('ueber-title').textContent = t.ueberTitle;
+        document.getElementById('ueber-text').textContent = t.ueberText;
+        document.getElementById('kontakt-title').textContent = t.kontaktTitle;
+        document.getElementById('kontakt-text').textContent = t.kontaktText;
+        document.getElementById('footer-text').textContent = t.footerText;
+      });
+    });
+  </script>
+</body>
+</html>
